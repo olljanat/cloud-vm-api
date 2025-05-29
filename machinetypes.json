@@ -1,0 +1,43 @@
+{
+  "small-debian": {
+    "os": {
+      "os_type": "Linux",
+      "os_distribution": "Debian",
+      "os_disk_size_gb": 50
+    },
+    "clouds": {
+      "Aws": {
+        "instance_type": "t2.micro",
+        "image": "ami-0644165ab979df02d"
+      },
+      "Azure": {
+        "instance_type": "Standard_B1s",
+        "image": "Debian/debian-12/12-gen2/latest"
+      },
+      "Proxmox": {
+        "instance_type": "ecs.g1.c1m1",
+        "image": "local:iso/debian12.iso"
+      }
+    }
+  },
+  "medium-debian": {
+    "os": {
+      "os_type": "Linux",
+      "os_distribution": "Debian"
+    },
+    "clouds": {
+      "Aws": {
+        "instance_type": "t3.medium",
+        "image": "ami-0644165ab979df02d"
+      },
+      "Azure": {
+        "instance_type": "Standard_B2s",
+        "image": "Debian/debian-12/12-gen2/latest"
+      },
+      "Proxmox": {
+        "instance_type": "ecs.g1.c2m4",
+        "image": "local:iso/debian12.iso"
+      }
+    }
+  }
+}

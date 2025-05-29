@@ -1,0 +1,36 @@
+[
+  {
+    "name": "aws-test1",
+    "cloud": "Aws",
+    "url": "",
+    "region": "eu-west-3",
+    "network_id": "subnet-0e5fbdb1ac4a8dead",
+    "vpc_id": "vpc-09ece8e3b2134782f"
+  },
+  {
+    "name": "azure-test1",
+    "cloud": "Azure",
+    "url": "AzurePublicCloud",
+    "region": "Azure-int/westeurope",
+    "network_id": "/subscriptions/54e30869-75a2-47ed-8b32-1057e61707f0/resourceGroups/oj-test/providers/Microsoft.Network/virtualNetworks/azure-vnet/subnets/first-subnet",
+    "vpc_id": "d9007062-1aae-4619-abb0-320699664975/54e30869-75a2-47ed-8b32-1057e61707f0",
+    "project": "oj-test"
+  },
+  {
+    "name": "ntnx-test1",
+    "cloud": "nutanix",
+    "project": "",
+    "url": "https://nutanix.domain.local:9440",
+    "region": "Nutanix/1",
+    "vpc_id": ""
+  },
+  {
+    "name": "pve-test1",
+    "cloud": "Proxmox",
+    "url": "https://192.168.8.136:8006",
+    "region": "Proxmox/1",
+    "network_id": "",
+    "storage_external_id": "storage/pve/local-lvm",
+    "vpc_id": "node/pve"
+  }
+]
