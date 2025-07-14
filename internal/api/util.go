@@ -40,7 +40,7 @@ func getHost(r *http.Request, envName string) (cloudprovider.ICloudHost, *config
 	regionId := env.Region
 	region, err := provider.GetIRegionById(regionId)
 	if err != nil {
-		regions, _ := provider.GetIRegions()
+		regions := provider.GetIRegions()
 		regionIds := []string{}
 		for _, region := range regions {
 			regionIds = append(regionIds, region.GetId())
